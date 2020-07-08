@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+	<style>
+		.fixImageSize{
+			height: 100px;
+			width: 100px;
+		}
+	</style>
+	<title>html attibute binding</title>
+</head>
+<body>
+	<div id="samyak">
+		Name : {{ name }}<br>
+		channel link : {{ ulink }}<br>
+		<a v-bind:href="ulink" title="This is channel link">{{ name }}</a>
+
+		<!-- kisi bhi attribute ko bind krna ho to use v-bind -->
+		<!-- Title is static message -->
+
+		<img v-bind:src="imageLink" v-bind:class="{fixImageSize:isActive}"><br>
+<!-- html from biding -->
+		<form method="post">
+			<input type="text" name="" v-bind:value="txtName" placeholder="Name">
+			<input type="text" name="" v-bind:value="txtEmail" placeholder="Email">
+			<button type="button" name="button">Submit</button>
+		</form><br>
+<!-- html text biding -->
+		<div v-html="htmlContent"></div>
+
+		
+
+	</div>
+
+	<script src="video1.js"></script>
+
+	<!-- vbing hata kr bs : colon lgakr bhi chl skta h program  ----   For 'Binding' we use either v-bind or : symbols -->
+</body>
+</html>

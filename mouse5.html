@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://unpkg.com/vue@2.6.11/dist/vue.js">
+		
+	</script>
+	<title> we will learn VUE JS EVENTS - MOUSEMOVE, MOUSEOVER, MOUSEOUT</title>
+</head>
+<body>
+	 <!-- MOUSEMOVE -->
+	<div id="my-app">
+	<div class="move-area" @mousemove="movefunction" style="height: 200px; width:200px; border: 1px solid black;">
+		<span> {{ x }},{{ y }} </span></div>
+
+
+		<button type="button" name="button" @mouseover="overfunction">Mouseover</button>
+
+		<!-- mouseout -->
+		<button type="button" name="button" @mouseout="outfunction">Mouseout</button>
+	</div>
+	<script src="mouse5.js"></script>
+</body>
+</html>

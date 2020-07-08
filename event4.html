@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+	<title>we will learn VUE JS EVENTS - CLICK & DOUBLE CLICK</title>
+</head>
+<body>
+	<div id="my-app">
+		<h3>Counter : {{ counter }}</h3>
+
+		<!-- click event -->
+		<button type="button" v-on:click="increment(1)" name="button">Increment by 1</button>
+		<button type="button" v-on:click="decrement(1)" name="button">Decrement by 1</button>
+
+		<!-- double click event -->
+		<button type="button" v-on:dblclick="increment(5)" name="button">Increment by 5</button>
+		<button type="button" v-on:dblclick="decrement(5)" name="button">Decrement by 5</button>
+	</div>
+<script src="event4.js"></script>
+</body>
+</html>
